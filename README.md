@@ -68,6 +68,8 @@ The current system combines lexical and semantic retrieval and then reranks the 
                         ▼
                  Grounded Answer
 
+```
+
 Retrieval Components
 1. BM25 Keyword Retrieval
 Handles exact lexical matches and improves retrieval for queries containing identifiers, names, error codes, and specific terms.
@@ -257,7 +259,9 @@ Metrics under consideration include:
 The goal is to measure whether each retrieval improvement actually improves the quality of retrieved context.
 No performance improvement numbers are claimed until they are measured against a defined evaluation dataset.
 
+
 Project Structure
+```
 enterprise-ai-knowledge-platform/
 │
 ├── app/
@@ -279,6 +283,7 @@ enterprise-ai-knowledge-platform/
 ├── alembic.ini
 └── README.md
 
+```
 Engineering Focus
 This project focuses on practical backend and AI engineering concepts:
 - Retrieval system design
@@ -301,6 +306,12 @@ Current Development
 The project is still actively being improved.
 The immediate focus is retrieval evaluation:
 1. Build a small representative evaluation dataset.
+2. Run the same queries through different retrieval strategies.
+3. Measure retrieval relevance.
+4. Compare hybrid retrieval against dense-only retrieval.
+5. Measure the impact of cross-encoder reranking.
+6. Use the results to identify further retrieval improvements.
+The goal is to make the system measurably better, rather than adding features without evaluating their impact.
 2. Run the same queries through different retrieval strategies.
 3. Measure retrieval relevance.
 4. Compare hybrid retrieval against dense-only retrieval.
